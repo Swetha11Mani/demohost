@@ -1,0 +1,60 @@
+.const{
+    position: relative;
+    margin: 20px;
+    background-color: blueviolet;
+    border: 1px solid red;
+    width: 350px;
+    height: 350px;
+    
+}
+
+
+.ani{
+    width: 40px;
+    height:  40px;
+    position: absolute;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 5s;
+    /*animation-iteration-count: infinite;*/
+    animation-timing-function: ease;
+    
+    
+}
+
+@keyframes example {
+    0%{
+        top: 0;
+        left: 0;
+        background-color: aqua;
+       transform: rotate(0deg);
+       
+    }
+    25%{
+        top: 0;
+        left: 310px;
+           background-color: beige;
+           transform: rotate(360deg);
+           
+    }
+    50%{
+        top: 310px;
+        left: 310px;
+        background-color: yellow;
+       transform: rotate(0deg);
+
+    }
+    75%{
+        top: 310px;
+        left: 0;
+       background-color: pink;
+       transform: rotate(360deg);
+
+    }
+    100%{
+        top: 0;
+        left: 0;
+       background-color: green;
+       transform: rotate(0deg);
+    }
+}
